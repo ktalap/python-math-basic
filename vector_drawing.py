@@ -39,6 +39,9 @@ class Segment():
         self.end_point = end_point
         self.color = color
 
+def add_vectors(*vectors): 
+    return[sum(v[0] for v in vectors), sum(v[1] for v in vectors)]
+
 def extract_vectors(objects):
     for object in objects:
         if type(object) == Polygon:

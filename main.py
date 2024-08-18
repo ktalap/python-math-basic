@@ -18,8 +18,14 @@ from vector_drawing import *
 #     Polygon(*dino_vectors)
 # )
 
-draw(
-    Points(*[(x, x**2) for x in range(-10, 11)]),
-    grid=(1,10),
-    nice_aspect_ratio=False
+# Drawing a parabola
+# draw(
+#     Points(*[(x, x**2) for x in range(-10, 11)]),
+#     grid=(1,10),
+#     nice_aspect_ratio=False
+# )
+
+draw (
+    Points((2,2), (-1,3)),
+    Segment((2,2), (-1,3), color=red)
 )
