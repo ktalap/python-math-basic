@@ -1,7 +1,6 @@
-from math import sqrt, pi, ceil, floor
+from math import sqrt, pi, ceil, floor, sin, cos
 import matplotlib
 import matplotlib.patches
-from matplotlib.collections import PatchCollection
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -139,5 +138,6 @@ def draw(*objects, origin=True, axes=True, grid=(1,1), nice_aspect_ratio=True,
 
     plt.show()
         
-    
-        
+def to_cartesian(polar_vector):
+    length, angle = polar_vector[0], polar_vector[1]
+    return(length*cos(angle), length*sin(angle))
